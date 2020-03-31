@@ -6,7 +6,6 @@ import { doGet } from '../services/api'
 import './styles.css'
 
 const Home = () => {
-    const [realValue, setRealValue] = useState(1)
     const [moedas, setMoedas] = useState([])
     const [moeda, setMoeda] = useState("")
 
