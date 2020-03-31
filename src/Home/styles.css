@@ -1,0 +1,12 @@
+body {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+}
+
+.conversor-moeda-real {
+    display: flex;
+    align-items: inherit;
+}
