@@ -18,7 +18,9 @@ const Home = () => {
 
     const coinList = Object.entries(moedas).map(m => {
         return (
-        <option value={m[0]} key={m[0]}>{m[1].name}</option>
+        <option value={m[0]} key={m[0]}>
+            {m[1].name}
+        </option>
         )
     })
 
@@ -30,9 +32,10 @@ const Home = () => {
                 <select name="moeda" id="moeda" onChange={c => setMoeda(c.target.value)}>
                     {coinList}
                 </select>
-                <p>Valor em Real:</p>
-                <p> {Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', minimumFractionDigits: 4 }).format(moedas[moeda]?.high)}</p>
-                
+                <div className="moeda_real">
+                    <p>Valor em Real:</p>
+                    <p> {Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', minimumFractionDigits: 2 }).format(moedas[moeda]?.high)}</p>
+                </div>
             </div>
 
             

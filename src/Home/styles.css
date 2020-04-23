@@ -1,12 +1,27 @@
-body {
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: blue;
-    color: white;
+.container {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: blueviolet;
+    align-content: center;
+    text-align: center;
+    
 }
 
-.conversor-moeda-real {
+.conversor-moeda-real{
     display: flex;
-    align-items: inherit;
+    width: 100%;
+
+
+}
+
+.conversor-moeda-real select {
+    height: 30px auto;
+    margin: 10px;
+    align-content: center;
+}
+
+.moeda_real {
+    text-align: right;
 }
